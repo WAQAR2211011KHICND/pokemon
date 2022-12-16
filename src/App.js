@@ -1,15 +1,13 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './Header/Header';
 import Sidebar from './Sidebar/Sidebar';
 import Center from './Center/Center';
 
 
 function App() {
-  
-  useEffect(()=>{
-    // fetch()
-  },[])
+
+  const [pokemons, setPokemons] = useState([]);
 
   return (
     <div className="App">
@@ -18,7 +16,7 @@ function App() {
       </header>
       <div className='side-center'> 
       <div className='sideBar'>
-        <Sidebar/>
+        <Sidebar pokemons={pokemons} setPokemons={setPokemons}/>
       </div>
         <div className='centerDiv'>
           <Center/>
