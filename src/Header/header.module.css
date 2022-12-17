@@ -1,0 +1,35 @@
+/* .AppHeader{
+    height: 11vh;
+    background: #2980b9; 
+    background: -webkit-linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); 
+    background: linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); 
+    display: flex;
+    justify-content: space-between;
+}   */
+
+.AppHeader{
+    height: 11vh;
+    background: rgb(92, 165, 2); 
+    background: -webkit-linear-gradient(to left, rgb(92, 165, 2), rgb(143, 253, 9), #ffffff); 
+    background: linear-gradient(to left, rgb(92, 165, 2), rgb(143, 253, 9), #ffffff); 
+    display: flex;
+    justify-content: space-between;
+}  
+
+.logo{
+    
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.mainlogo{
+    height: 80px;
+    width: 300px;
+}
+
+.sideloga{
+    margin-top: 10px;
+    height: 70px;
+    width: 250px;
+}

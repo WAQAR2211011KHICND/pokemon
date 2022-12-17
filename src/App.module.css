@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-.AppHeader{
- 
-  height: 11vh;
-  background: #2980b9; 
-  background: -webkit-linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); 
-  background: linear-gradient(to left, #2980b9, #6dd5fa, #ffffff); 
-  display: flex;
-  justify-content: space-between;
-}
 
 .sideWithCenter{
   height: 89vh;
@@ -20,38 +11,3 @@
 
 }
 
-.sideBar{
-  border: 1px solid black;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: scroll;
-}
-
-.sideBar::-webkit-scrollbar{
-  width: 10px;
-}
-
-
-/* Track */
-.sideBar::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: rgb(233, 232, 232); 
-}
-
-/* Handle */
-.sideBar::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: rgb(121, 218, 1); 
-}
-
-/* Handle on hover */
-.sideBar::-webkit-scrollbar-thumb:hover {
-  background: rgb(121, 192, 35); 
-}
-.centerDiv{
-  border: 1px solid black;
-  width: 70%;
-  
-}

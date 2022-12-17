@@ -1,0 +1,33 @@
+.centerDiv{
+    /* border: 1px solid black; */
+    width: 70%;
+    display: flex;
+}
+
+.MainImage{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.MainImage img{
+    width: 95%;
+}
+
+.detail{
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.detail > ul{
+    margin-left: 14px;
+    list-style-type: none;
+}
