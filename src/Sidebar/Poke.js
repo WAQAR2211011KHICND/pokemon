@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect,  useState } from "react";
 import styles from './Sidebar.module.css' 
 const Poke = ({name, url}) =>{
 
-    const [pokeObject, setPokeObject] = useState({})
+    const [pokeObject, setPokeObject] = useState({});
     useEffect(()=>{
         fetch(url)
         .then(data=>data.json())
@@ -16,23 +16,22 @@ const Poke = ({name, url}) =>{
            }
            setPokeObject(pokeObject)
         })
-    }, [])
+    })
 
         
     const openPoke=()=>{
-
+        
     }
 
     return (
-        <div className={styles.Poke} >
-            <a href={pokeObject.url}>
-
+        <div className={styles.Poke} onClick={openPoke} role='button'>
+            {/* <a href={pokeObject.url}> */}
             <h2>{`#0${pokeObject.id}`}</h2>
             <h1>{pokeObject.name}</h1>
-            <img src={pokeObject.image} className={styles.image} alt={`${pokeObject.name} image`}/>
+            <img src={pokeObject.image} className={styles.image} alt={`${pokeObject.name}`}/>
             <h3>Type: {pokeObject.type}</h3>
-            {/* <p>{pokeObject.url}</p> */}
-            </a>
+            {/* {btn && <p>{pokeObject.url}</p>} */}
+            {/* </a> */}
         </div>
     );
 }

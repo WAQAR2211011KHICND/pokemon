@@ -13,6 +13,7 @@
 
 .Poke:hover{
     background-color: rgb(121, 218, 1);
+    cursor : pointer;
 }
 
 .btn{
