@@ -25,21 +25,25 @@
   .sideBar::-webkit-scrollbar-thumb {
 
     border-radius: 10px;
-    background: rgb(121, 218, 1); 
+    background:  #0ed2f7; 
   }
   
   /* Handle on hover */
   .sideBar::-webkit-scrollbar-thumb:hover {
-    background: rgb(121, 192, 35); 
+    background:  #0ed2f7; 
   }
 
 .Poke{
-    border: 1px solid rgb(92, 165, 2) ;
+    border: 1px solid  #0ed2f7 ;
     width: 240px;
     padding: 10px;
     margin-top: 20px ;
     margin-bottom: 20px ;
     border-radius: 10px;
+    background: #b2fefa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .image{
@@ -47,7 +51,7 @@
 }
 
 .Poke:hover{
-    background-color: rgb(121, 218, 1);
+    background-color: #0ed2f7;
     cursor : pointer;
 }
 
@@ -56,10 +60,13 @@
     padding: 5px;
     margin-top: 50px;
     margin-bottom: 30px;
-    background-color: rgb(121, 218, 1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: #b2fefa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
     border: none;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 
 .btn p{
@@ -68,8 +75,8 @@
   font-weight:500;
 }
 .btn:hover{
-    border: 1px solid rgb(94, 169, 2);
-    background-color: white;
-    color: rgb(107, 190, 4);
+   
+    background:#b2fefa ;
+    color: black;
 
 }

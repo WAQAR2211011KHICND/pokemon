@@ -38,6 +38,7 @@ function Sidebar({pokemons, setPokemons , setIndiviPokemon}){
                         pokemon={{name: pokemon.name,url:pokemon.url}}
                         setIndiviPokemon={setIndiviPokemon} 
                         key={pokemon.name}
+                        
                         />)
                })
         }
