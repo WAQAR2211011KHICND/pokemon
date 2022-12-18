@@ -1,3 +1,4 @@
+## Author : Muhammad Waqar & Muhammad Hassan Raza
 # React Poke Card
 
 _Grabbing onto React hooks._
