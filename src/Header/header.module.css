@@ -8,12 +8,13 @@
 }   */
 
 .AppHeader{
-    height: 11vh;
-    background: rgb(92, 165, 2); 
-    background: -webkit-linear-gradient(to left, rgb(92, 165, 2), rgb(143, 253, 9), #ffffff); 
-    background: linear-gradient(to left, rgb(92, 165, 2), rgb(143, 253, 9), #ffffff); 
+    height: 13vh;
+    background: #b2fefa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b2fefa, #0ed2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }  
 
 .leftLogo{
