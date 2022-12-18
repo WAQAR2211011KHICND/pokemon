@@ -1,43 +1,42 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useContext, useState } from 'react';
+import noteContext from '../Api/Context/noteContext';
+import {  LoadMorePokemon, useLoadPokemon } from '../Api/useLoadPokemon';
 import Poke from './Poke';
 import styles from './Sidebar.module.css'
 
 
-function Sidebar({pokemons, setPokemons , setIndiviPokemon}){
+function Sidebar(){
 
+    const {Pokemons, IndiviPokemon} = useContext(noteContext);
     const [loading, setLoading] = useState(false);
 
-    useEffect(()=>{
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=5&offset=0")
-        .then((data)=>data.json())
-        .then((data)=> {
-            setPokemons(data);
-        })   
-    },[]);
+    useLoadPokemon({setPokemons: Pokemons.setPokemons});
 
     const loadMore = () =>{
         setLoading(true);
-        fetch(pokemons.next)
-        .then((data)=>data.json())
-        .then((data)=>{
-            setPokemons(poke=>{ 
-                return {...data, results: [...poke.results, ...data.results]}
-            } )
-            setLoading(false);
-        })
+        LoadMorePokemon({pokemons: Pokemons.pokemons})
+            .then(data=>{
+                Pokemons.setPokemons(
+                    poke => {
+                        return {...data, results: [...poke.results, ...data.results]}
+                    }
+                )
+                setLoading(false);
+            })
     }
 
     return (
         
-    <div className={styles.sideBar}>
+    <div className={styles.sideBar}  data-testid='Sidebar'>
         {
-            pokemons?.results?.map(
+            Pokemons?.pokemons?.results?.map(
                 (pokemon)=>{
                     return( 
                         <Poke
                         pokemon={{name: pokemon.name,url:pokemon.url}}
-                        setIndiviPokemon={setIndiviPokemon} 
+                        setIndiviPokemon={IndiviPokemon.setIndiviPokemon} 
                         key={pokemon.name}
+                        
                         />)
                })
         }

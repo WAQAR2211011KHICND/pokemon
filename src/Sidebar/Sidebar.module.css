@@ -67,6 +67,7 @@
   font-family:'Times New Roman', Times, serif;
   font-weight:500;
 }
+
 .btn:hover{
     border: 1px solid rgb(94, 169, 2);
     background-color: white;

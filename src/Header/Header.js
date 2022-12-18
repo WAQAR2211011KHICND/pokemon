@@ -6,12 +6,12 @@ import { memo } from 'react';
 function Header(){
 
     return (
-    <div className={styles.AppHeader}>
-        <img className='logo' src={logo} alt="logo" />
+    <div className={styles.AppHeader} data-testid='Header'>
+        <img className={styles.leftLogo} data-testid='leftLogo' src={logo} alt="logo" />
 
-        <img className='mainlogo' src={MainLogo} alt="mainlogo"/>
+        <img className={styles.MainLogo} data-testid='mainLogo' src={MainLogo} alt="mainlogo"/>
 
-        <img className='sideloga' src={sideloga} alt="sideloga"/>
+        <img className={styles.rightLogo} data-testid='rightLogo' src={sideloga} alt="sideloga"/>
     </div>
 
     )
