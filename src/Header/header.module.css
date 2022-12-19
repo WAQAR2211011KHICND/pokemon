@@ -20,8 +20,8 @@
 .leftLogo{
     
     padding: 10px;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 .mainlogo{
@@ -30,7 +30,7 @@
 }
 
 .rightLogo{
-    margin-top: 10px;
+    margin-top: 40px;
     height: 70px;
     width: 250px;
 }
