@@ -8,7 +8,7 @@
 }   */
 
 .AppHeader{
-    height: 13vh;
+    height: 11vh;
     background: #b2fefa; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #b2fefa, #0ed2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
